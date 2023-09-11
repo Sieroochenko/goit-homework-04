@@ -105,6 +105,7 @@ body {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  width: 100%;
 }
 .menu-link {
   color: #2e2f42;
@@ -115,6 +116,7 @@ body {
   padding: 24px 0;
   display: block;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link-studio {
   color: #404bbf;
@@ -158,6 +160,8 @@ body {
   background-color: #2e2f42;
   padding: 188px 0;
   max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -194,6 +198,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button:hover,
 .button:focus {
@@ -310,6 +315,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .portfolio {
   padding-top: 120px;
@@ -344,11 +350,13 @@ body {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   width: calc((100% - 48px) / 3);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-container {
   position: relative;
   overflow: hidden;
